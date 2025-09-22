@@ -1,4 +1,4 @@
-name: Run Google Sheets and OpenAI Script
+name: RSS a Slack (Diario)
 
 on:
   schedule:
