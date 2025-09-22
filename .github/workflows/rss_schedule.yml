@@ -3,7 +3,8 @@ name: RSS a Slack (Diario)
 on:
   schedule:
     # Se ejecuta todos los días hábiles de 7:00 a 17:00 hora Argentina
-    - cron: '0 10-20 * * 1-5'
+    #- cron: '0 10-20 * * 1-5'
+    cron: '10 9 * * *'
   workflow_dispatch:
     # Esto permite ejecutar el workflow manualmente desde GitHub
 
