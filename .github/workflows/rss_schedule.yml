@@ -2,8 +2,10 @@ name: RSS a Slack (Diario)
 
 on:
   schedule:
-    - cron: '17 * * * *'
+    # Se ejecuta a los 25 minutos de cada hora para fines de prueba
+    - cron: '25 * * * *'
   workflow_dispatch:
+    # Esto permite la ejecución manual
 
 jobs:
   run-script:
