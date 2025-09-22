@@ -2,8 +2,8 @@ name: RSS a Slack (Diario)
 
 on:
   schedule:
-    # Se ejecuta cada 5 minutos para esta prueba.
-    - cron: '*/5 * * * *'
+    # Se ejecuta de lunes a viernes de 7 a 18.
+    - cron: '0 10-21 * * 1-5'
   workflow_dispatch:
 
 jobs:
