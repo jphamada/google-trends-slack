@@ -2,10 +2,10 @@ name: RSS a Slack (Diario)
 
 on:
   schedule:
-    # Cron expression para 'todos los días hábiles de 7:00 a 17:00 hora Argentina'
-    # Nota: GitHub Actions usa la hora UTC. Argentina (GMT-3) es 3 horas detrás.
-    # Por lo tanto, 7:00-17:00 en Argentina es 10:00-20:00 en UTC.
+    # Se ejecuta todos los días hábiles de 7:00 a 17:00 hora Argentina
     - cron: '0 10-20 * * 1-5'
+  workflow_dispatch:
+    # Esto permite ejecutar el workflow manualmente desde GitHub
 
 jobs:
   run-script:
@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-
+      
       - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
