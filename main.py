@@ -2,10 +2,7 @@ import requests
 import xml.etree.ElementTree as ET
 import os
 
-# --- CONFIGURACIÓN ---
-# URL del feed RSS de Google Trends para Argentina
 RSS_URL = "https://trends.google.com.ar/trending/rss?geo=AR"
-# Lee la URL del Webhook desde el secreto de GitHub
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")
 # --- FIN DE CONFIGURACIÓN ---
 
